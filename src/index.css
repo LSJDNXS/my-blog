@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+/* 启用 class 策略的暗色模式（.dark 类） */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB",
+    system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 文章正文排版 */
+.markdown {
+  color: #334155;
+  line-height: 1.85;
+  font-size: 1.05rem;
+  word-break: break-word;
+}
+.dark .markdown {
+  color: #cbd5e1;
+}
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  font-weight: 700;
+  color: #0f172a;
+  margin: 1.6em 0 0.6em;
+}
+.dark .markdown h1,
+.dark .markdown h2,
+.dark .markdown h3 {
+  color: #f1f5f9;
+}
+.markdown h1 {
+  font-size: 1.7em;
+}
+.markdown h2 {
+  font-size: 1.4em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #e2e8f0;
+}
+.dark .markdown h2 {
+  border-color: #334155;
+}
+.markdown h3 {
+  font-size: 1.2em;
+}
+.markdown p {
+  margin: 0.8em 0;
+}
+.markdown ul,
+.markdown ol {
+  margin: 0.8em 0;
+  padding-left: 1.6em;
+}
+.markdown ul {
+  list-style: disc;
+}
+.markdown ol {
+  list-style: decimal;
+}
+.markdown li {
+  margin: 0.35em 0;
+}
+.markdown blockquote {
+  margin: 1.1em 0;
+  padding: 0.5em 1.1em;
+  border-left: 4px solid #6366f1;
+  background: #eef2ff;
+  color: #4338ca;
+  border-radius: 0 8px 8px 0;
+}
+.dark .markdown blockquote {
+  background: #1e1b4b;
+  color: #a5b4fc;
+  border-color: #6366f1;
+}
+.markdown a {
+  color: #4f46e5;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.markdown strong {
+  font-weight: 700;
+  color: #0f172a;
+}
+.dark .markdown strong {
+  color: #f1f5f9;
+}
+.markdown hr {
+  margin: 2em 0;
+  border-color: #e2e8f0;
+}
+.dark .markdown hr {
+  border-color: #334155;
+}
+.markdown code {
+  background: #f1f5f9;
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #be123c;
+}
+.dark .markdown code {
+  background: #1e293b;
+  color: #fda4af;
+}
