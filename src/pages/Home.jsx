@@ -32,11 +32,17 @@ export default function Home() {
 
       <section className="mx-auto max-w-5xl px-5 py-14">
         <h2 className="mb-6 text-2xl font-bold text-slate-900 dark:text-white">最新文章</h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {recent.map((post) => (
-            <PostCard key={post.slug} post={post} />
-          ))}
-        </div>
+        {recent.length === 0 ? (
+          <p className="rounded-2xl border border-dashed border-slate-300 py-16 text-center text-slate-400 dark:border-slate-700 dark:text-slate-500">
+            暂无文章，敬请期待
+          </p>
+        ) : (
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {recent.map((post) => (
+              <PostCard key={post.slug} post={post} />
+            ))}
+          </div>
+        )}
       </section>
     </div>
   )
