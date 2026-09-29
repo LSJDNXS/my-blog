@@ -3,9 +3,9 @@
 // ============================================
 
 export const site = {
-  name: '我的博客',
+  name: '灵川的博客',
   tagline: '记录学习、思考与生活',
-  author: '你的名字',
+  author: '灵川',
   bio: '一名热爱学习与分享的青年，用文字记录成长的点滴。欢迎常来做客。',
   avatar: '', // 可填头像图片 URL，留空则显示名字首字
   nav: [
@@ -17,5 +17,5 @@ export const site = {
     { label: 'GitHub', url: 'https://github.com/你的用户名' },
     { label: '邮箱', url: 'mailto:you@example.com' },
   ],
-  footer: '© 2026 我的博客 · 由 React + Tailwind 构建',
+  footer: '© 2026 灵川的博客 · 由 React + Tailwind 构建',
 }
