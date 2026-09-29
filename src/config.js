@@ -7,7 +7,7 @@ export const site = {
   tagline: '记录学习、思考与生活',
   author: '灵川',
   bio: '一名热爱学习与分享的青年，用文字记录成长的点滴。欢迎常来做客。',
-  avatar: '', // 可填头像图片 URL，留空则显示名字首字
+  avatar: './avatar.png', // 头像图片（放在 public 目录下）
   nav: [
     { label: '首页', to: '/' },
     { label: '文章', to: '/posts' },
